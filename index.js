@@ -22,3 +22,4 @@ function getProductId(url) {
 }
 
 setupBtnListener();
+console.log('Init completed!');
