@@ -15,10 +15,10 @@ function goToChecker() {
 }
 
 function getProductId(url) {
-    const regexp = /product--.*\/(?'productId'\d*)/gm;
+    const regexp = /product--.*\/(\d*)/gm;
     const match = url.match(regexp);
     console.log({match});
-    return match[2];
+    return match[1];
 }
 
 setupBtnListener();
